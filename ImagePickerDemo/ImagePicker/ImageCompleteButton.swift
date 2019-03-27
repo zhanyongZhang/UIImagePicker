@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HGImageCompleteButton: UIView {
+class ImageCompleteButton: UIView {
 
     var numLabel:UILabel!
     var titleLabel:UILabel!

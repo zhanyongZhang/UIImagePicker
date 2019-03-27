@@ -14,13 +14,13 @@
 		9F7E73DF224B14D400153A51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7E73DD224B14D400153A51 /* LaunchScreen.storyboard */; };
 		9F7E73EA224B14D400153A51 /* ImagePickerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E73E9224B14D400153A51 /* ImagePickerDemoTests.swift */; };
 		9F7E73F5224B14D400153A51 /* ImagePickerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E73F4224B14D400153A51 /* ImagePickerDemoUITests.swift */; };
-		9F7E7405224B160700153A51 /* HGImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F7E7403224B160700153A51 /* HGImage.xcassets */; };
-		9F7E7406224B160700153A51 /* HGImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7E7404224B160700153A51 /* HGImage.storyboard */; };
-		9F7E7408224B164600153A51 /* HGImagePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E7407224B164600153A51 /* HGImagePickerCell.swift */; };
-		9F7E740A224B16D400153A51 /* HGImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E7409224B16D400153A51 /* HGImageCollectionViewCell.swift */; };
-		9F7E740C224B1E5E00153A51 /* HGImageCompleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E740B224B1E5E00153A51 /* HGImageCompleteButton.swift */; };
-		9F7E740E224B498000153A51 /* HGImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E740D224B498000153A51 /* HGImagePickerController.swift */; };
-		9F7E7410224B499D00153A51 /* HGImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E740F224B499D00153A51 /* HGImageCollectionViewController.swift */; };
+		9F7E7405224B160700153A51 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F7E7403224B160700153A51 /* Image.xcassets */; };
+		9F7E7406224B160700153A51 /* Image.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7E7404224B160700153A51 /* Image.storyboard */; };
+		9F7E7408224B164600153A51 /* ImagePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E7407224B164600153A51 /* ImagePickerCell.swift */; };
+		9F7E740A224B16D400153A51 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E7409224B16D400153A51 /* ImageCollectionViewCell.swift */; };
+		9F7E740C224B1E5E00153A51 /* ImageCompleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E740B224B1E5E00153A51 /* ImageCompleteButton.swift */; };
+		9F7E740E224B498000153A51 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E740D224B498000153A51 /* ImagePickerController.swift */; };
+		9F7E7410224B499D00153A51 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E740F224B499D00153A51 /* ImageCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +54,13 @@
 		9F7E73F0224B14D400153A51 /* ImagePickerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePickerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7E73F4224B14D400153A51 /* ImagePickerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerDemoUITests.swift; sourceTree = "<group>"; };
 		9F7E73F6224B14D400153A51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F7E7403224B160700153A51 /* HGImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HGImage.xcassets; sourceTree = "<group>"; };
-		9F7E7404224B160700153A51 /* HGImage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HGImage.storyboard; sourceTree = "<group>"; };
-		9F7E7407224B164600153A51 /* HGImagePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGImagePickerCell.swift; sourceTree = "<group>"; };
-		9F7E7409224B16D400153A51 /* HGImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		9F7E740B224B1E5E00153A51 /* HGImageCompleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGImageCompleteButton.swift; sourceTree = "<group>"; };
-		9F7E740D224B498000153A51 /* HGImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGImagePickerController.swift; sourceTree = "<group>"; };
-		9F7E740F224B499D00153A51 /* HGImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGImageCollectionViewController.swift; sourceTree = "<group>"; };
+		9F7E7403224B160700153A51 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		9F7E7404224B160700153A51 /* Image.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Image.storyboard; sourceTree = "<group>"; };
+		9F7E7407224B164600153A51 /* ImagePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCell.swift; sourceTree = "<group>"; };
+		9F7E7409224B16D400153A51 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		9F7E740B224B1E5E00153A51 /* ImageCompleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCompleteButton.swift; sourceTree = "<group>"; };
+		9F7E740D224B498000153A51 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		9F7E740F224B499D00153A51 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,13 +143,13 @@
 		9F7E7402224B15F800153A51 /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				9F7E740F224B499D00153A51 /* HGImageCollectionViewController.swift */,
-				9F7E740D224B498000153A51 /* HGImagePickerController.swift */,
-				9F7E740B224B1E5E00153A51 /* HGImageCompleteButton.swift */,
-				9F7E7409224B16D400153A51 /* HGImageCollectionViewCell.swift */,
-				9F7E7407224B164600153A51 /* HGImagePickerCell.swift */,
-				9F7E7404224B160700153A51 /* HGImage.storyboard */,
-				9F7E7403224B160700153A51 /* HGImage.xcassets */,
+				9F7E740F224B499D00153A51 /* ImageCollectionViewController.swift */,
+				9F7E740D224B498000153A51 /* ImagePickerController.swift */,
+				9F7E740B224B1E5E00153A51 /* ImageCompleteButton.swift */,
+				9F7E7409224B16D400153A51 /* ImageCollectionViewCell.swift */,
+				9F7E7407224B164600153A51 /* ImagePickerCell.swift */,
+				9F7E7404224B160700153A51 /* Image.storyboard */,
+				9F7E7403224B160700153A51 /* Image.xcassets */,
 			);
 			path = ImagePicker;
 			sourceTree = "<group>";
@@ -258,10 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F7E7406224B160700153A51 /* HGImage.storyboard in Resources */,
+				9F7E7406224B160700153A51 /* Image.storyboard in Resources */,
 				9F7E73DF224B14D400153A51 /* LaunchScreen.storyboard in Resources */,
 				9F7E73DC224B14D400153A51 /* Assets.xcassets in Resources */,
-				9F7E7405224B160700153A51 /* HGImage.xcassets in Resources */,
+				9F7E7405224B160700153A51 /* Image.xcassets in Resources */,
 				9F7E73DA224B14D300153A51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,13 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F7E740C224B1E5E00153A51 /* HGImageCompleteButton.swift in Sources */,
-				9F7E7410224B499D00153A51 /* HGImageCollectionViewController.swift in Sources */,
+				9F7E740C224B1E5E00153A51 /* ImageCompleteButton.swift in Sources */,
+				9F7E7410224B499D00153A51 /* ImageCollectionViewController.swift in Sources */,
 				9F7E73D7224B14D300153A51 /* ViewController.swift in Sources */,
 				9F7E73D5224B14D300153A51 /* AppDelegate.swift in Sources */,
-				9F7E7408224B164600153A51 /* HGImagePickerCell.swift in Sources */,
-				9F7E740E224B498000153A51 /* HGImagePickerController.swift in Sources */,
-				9F7E740A224B16D400153A51 /* HGImageCollectionViewCell.swift in Sources */,
+				9F7E7408224B164600153A51 /* ImagePickerCell.swift in Sources */,
+				9F7E740E224B498000153A51 /* ImagePickerController.swift in Sources */,
+				9F7E740A224B16D400153A51 /* ImageCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

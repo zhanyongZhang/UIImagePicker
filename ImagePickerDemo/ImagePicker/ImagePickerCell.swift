@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HGImagePickerCell: UITableViewCell {
+class ImagePickerCell: UITableViewCell {
 
     @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var countLabel: UILabel!

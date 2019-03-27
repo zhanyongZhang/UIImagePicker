@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
     @IBAction func tap(_ sender: Any) {
 
-        self.presentHGImagePicker(maxSelected: 4) { asset  in
+      _ =  self.presentHGImagePicker(maxSelected: 4) { asset  in
             
             print(asset.description)
         }

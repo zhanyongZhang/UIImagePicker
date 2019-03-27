@@ -10,11 +10,11 @@ import UIKit
 import Photos
 
 
-class HGImageCollectionViewController: UIViewController {
+class ImageCollectionViewController: UIViewController {
     
     @IBOutlet weak var collectionView:UICollectionView!
     @IBOutlet weak var toolBar:UIToolbar!
-    var completeButton: HGImageCompleteButton!
+    var completeButton: ImageCompleteButton!
 
     var maxSelected: Int = Int.max
     var assetsFetchResults:PHFetchResult<PHAsset>?
@@ -44,7 +44,7 @@ class HGImageCollectionViewController: UIViewController {
         let rightBarItem = UIBarButtonItem(title: "取消", style: .plain, target: self, action: #selector(cancel))
         self.navigationItem.rightBarButtonItem = rightBarItem
         
-        completeButton = HGImageCompleteButton()
+        completeButton = ImageCompleteButton()
         completeButton.addTarget(target: self, action: #selector(finishSelect))
         completeButton.center = CGPoint(x: UIScreen.main.bounds.width - 50, y: 22)
         completeButton.isEnabled = false
@@ -79,7 +79,7 @@ class HGImageCollectionViewController: UIViewController {
 }
 
 
-extension HGImageCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ImageCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.assetsFetchResults?.count ?? 0
@@ -87,7 +87,7 @@ extension HGImageCollectionViewController: UICollectionViewDelegate, UICollectio
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HGImageCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ImageCollectionViewCell
         let asset = self.assetsFetchResults![indexPath.row]
         
         self.imageManager.requestImage(for: asset, targetSize: assetGridThumbnailSize, contentMode: .aspectFill, options: nil, resultHandler: { (image, info) in
@@ -98,7 +98,7 @@ extension HGImageCollectionViewController: UICollectionViewDelegate, UICollectio
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if let cell = collectionView.cellForItem(at: indexPath) as? HGImageCollectionViewCell {
+        if let cell = collectionView.cellForItem(at: indexPath) as? ImageCollectionViewCell {
             
             let count = self.selectedCount()
             if count > maxSelected {
@@ -127,7 +127,7 @@ extension HGImageCollectionViewController: UICollectionViewDelegate, UICollectio
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         
         if let cell = collectionView.cellForItem(at: indexPath)
-            as? HGImageCollectionViewCell {
+            as? ImageCollectionViewCell {
             
             let count = self.selectedCount()
             completeButton.num = count

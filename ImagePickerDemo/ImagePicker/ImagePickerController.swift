@@ -9,15 +9,15 @@
 import UIKit
 import Photos
 
-struct HGImageAlbumItem {
+struct ImageAlbumItem {
     var title: String?
     var fetchResult: PHFetchResult<PHAsset>
 }
 
-class HGImagePickerController: UIViewController {
+class ImagePickerController: UIViewController {
 
     @IBOutlet weak var tableView:UITableView!
-    var items: [HGImageAlbumItem] = []
+    var items: [ImageAlbumItem] = []
     var maxSelected: Int = Int.max
     var completeHandler: ((_ assets: [PHAsset]) -> ())?
     
@@ -43,7 +43,7 @@ class HGImagePickerController: UIViewController {
             DispatchQueue.main.sync {
                 self.tableView.reloadData()
                 
-                if let imageCollectionVC = self.storyboard?.instantiateViewController(withIdentifier: "hgImageCollectionVC") as? HGImageCollectionViewController {
+                if let imageCollectionVC = self.storyboard?.instantiateViewController(withIdentifier: "hgImageCollectionVC") as? ImageCollectionViewController {
                     
                     imageCollectionVC.title = self.items.first?.title
                     imageCollectionVC.assetsFetchResults = self.items.first?.fetchResult
@@ -66,7 +66,7 @@ class HGImagePickerController: UIViewController {
             if assetsFetchResult.count > 0 {
                 
                 let title = titleOfAlbumForChinse(title: c.localizedTitle)
-                items.append(HGImageAlbumItem(title: title, fetchResult: assetsFetchResult))
+                items.append(ImageAlbumItem(title: title, fetchResult: assetsFetchResult))
             }
         }
     }
@@ -109,7 +109,7 @@ class HGImagePickerController: UIViewController {
         
         if segue.identifier == "showImages" {
             
-            guard let imageCollectionVC = segue.destination as? HGImageCollectionViewController, let cell = sender as? HGImagePickerCell else {
+            guard let imageCollectionVC = segue.destination as? ImageCollectionViewController, let cell = sender as? ImagePickerCell else {
                 return
             }
             
@@ -125,7 +125,7 @@ class HGImagePickerController: UIViewController {
     }
 }
 
-extension HGImagePickerController: UITableViewDelegate, UITableViewDataSource {
+extension ImagePickerController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count
@@ -133,7 +133,7 @@ extension HGImagePickerController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HGImagePickerCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ImagePickerCell
         cell.titleLable.text = "\(String(describing: self.items[indexPath.row].title!))"
         cell.countLabel.text = "\(self.items[indexPath.row].fetchResult.count)"
         return cell
@@ -145,9 +145,9 @@ extension HGImagePickerController: UITableViewDelegate, UITableViewDataSource {
 
 extension UIViewController {
     
-    func presentHGImagePicker(maxSelected: Int = Int.max, completeHandler: @escaping ((_ asset: [PHAsset]) -> ())) -> HGImagePickerController? {
+    func presentHGImagePicker(maxSelected: Int = Int.max, completeHandler: @escaping ((_ asset: [PHAsset]) -> ())) -> ImagePickerController? {
         
-        guard let vc = UIStoryboard(name: "HGImage", bundle: Bundle.main).instantiateViewController(withIdentifier: "imagePickerVC") as? HGImagePickerController  else {
+        guard let vc = UIStoryboard(name: "Image", bundle: Bundle.main).instantiateViewController(withIdentifier: "imagePickerVC") as? ImagePickerController  else {
             return nil
         }
         vc.maxSelected = maxSelected

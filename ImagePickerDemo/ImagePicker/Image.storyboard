@@ -12,7 +12,7 @@
         <!--Image Picker Controller-->
         <scene sceneID="BVR-mv-Kbb">
             <objects>
-                <viewController storyboardIdentifier="imagePickerVC" id="T2V-4B-Rlc" customClass="HGImagePickerController" customModule="ImagePickerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="imagePickerVC" id="T2V-4B-Rlc" customClass="ImagePickerController" customModule="ImagePickerDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Y5-34-3d0"/>
                         <viewControllerLayoutGuide type="bottom" id="e8n-UT-KXs"/>
@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="58" id="S6N-Q4-drh" customClass="HGImagePickerCell" customModule="ImagePickerDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="58" id="S6N-Q4-drh" customClass="ImagePickerCell" customModule="ImagePickerDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S6N-Q4-drh" id="akc-Sf-MNq">
@@ -90,7 +90,7 @@
         <!--Image Collection View Controller-->
         <scene sceneID="xff-8l-RP9">
             <objects>
-                <viewController storyboardIdentifier="hgImageCollectionVC" id="ybE-mT-bfT" customClass="HGImageCollectionViewController" customModule="ImagePickerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="hgImageCollectionVC" id="ybE-mT-bfT" customClass="ImageCollectionViewController" customModule="ImagePickerDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eJc-Du-Q6U"/>
                         <viewControllerLayoutGuide type="bottom" id="Zws-CJ-rtL"/>
@@ -109,7 +109,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="xGF-2R-csA" customClass="HGImageCollectionViewCell" customModule="ImagePickerDemo" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="xGF-2R-csA" customClass="ImageCollectionViewCell" customModule="ImagePickerDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
